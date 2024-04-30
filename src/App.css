@@ -1,0 +1,221 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 241px;
+  border: 2px solid black;
+  background-color: rgb(29, 30, 31);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 85px 120px 31px 120px;
+}
+
+.name_serach_bar {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.name_serach_bar input {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #ff0909;
+  background-color: rgb(29, 30, 31);
+  font-family: Inter;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+  align-items: center;
+  padding-left: 4px;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 54px;
+}
+
+.btns button {
+  font-size: 16px;
+  font-weight: 400px;
+  font-family: Inter;
+  padding: 6px 12px;
+  border-radius: 5px;
+  align-items: flex-start;
+  background-color: #ff0909;
+  color: #ffff;
+  border: none;
+}
+
+.card {
+  width: 340px;
+  height: 167px;
+  border-radius: 19.447px;
+  background: url(../public/Images/Rectangle\ 1.png),
+    lightgray 0% 0% / 50.8334219455719px 50.8334219455719px repeat,
+    radial-gradient(
+      151.92% 127.02% at 15.32% 21.04%,
+      rgba(165, 239, 255, 0.2) 0%,
+      rgba(110, 191, 244, 0.04) 77.08%,
+      rgba(70, 144, 212, 0) 100%
+    );
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(13.184196472167969px);
+  display: flex;
+  gap: 10px;
+  border: 2px solid black;
+}
+.card img {
+  border-radius: 133px;
+}
+.description span {
+  color: white;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.description p {
+  width: 168px;
+  height: 59px;
+  color: white;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.description button {
+  padding: 4px 6px;
+  margin: 45px 120px 45px 120px;
+  background-color: #ff0909;
+  border: none;
+  color: #ffff;
+  border-radius: 5px;
+}
+
+.section {
+  width: 100%;
+  height: 1300px;
+  background: url(../public/Images/foods.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+ 
+}
+.lunchsection{
+  width: 100%;
+  height: 690px;
+  background: url(../public/Images/foods.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.dinnersection{
+  width: 100%;
+  height: 690px;
+  background: url(../public/Images/foods.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.breakfastsection{
+  width: 100%;
+  height: 1000px;
+  background: url(../public/Images/foods.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center;
+  background-attachment: fixed;
+}
+.content {
+  background: rgba(13, 13, 13, 0.76);
+  width: 100%;
+ height: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 50px;
+}
+.lunchcontent{
+  background: rgba(13, 13, 13, 0.76);
+  width: 100%;
+ height: 690px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 30px;
+
+}
+.dinnercontent{
+  background: rgba(13, 13, 13, 0.76);
+  width: 100%;
+ height: 690px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+.breakfastcontent{
+  background: rgba(13, 13, 13, 0.76);
+  width: 100%;
+ height: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 70px;
+}
+
+.items{
+  display: flex;
+}
+.searchItemsection{
+  width: 100%;
+  height: 100vh;
+  background: url(../public/Images/foods.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.searchItemcontent{
+  background: rgba(13, 13, 13, 0.76);
+  width: 100%;
+ height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .name_serach_bar {
+    display: block;
+  }
+  .section {
+    background-color: red;
+  }
+
+  .name_serach_bar input {
+    width: 200px;
+  }
+  .cards{
+    display: block  ;
+  }
+}
